@@ -15,7 +15,7 @@
 <body style="width: 43%; margin: auto;">
   
   <!-- This is the main page of the PDF -->
-  <div id="html2pdf">
+  <div id="Resume">
     <h2>Karthikeyan A</h2>
     <div id="selectedBanner"> <!-- Displaying the image in this place.--> </div>
     <input type="file" class="form-control" id="img" placeholder="Enter password" name="image" />
@@ -63,11 +63,11 @@
   <script>
     function generatePDF() {
      var doc = new jsPDF();
-      doc.fromHTML(document.getElementById("html2pdf"),15,15,{
+      doc.fromHTML(document.getElementById("Resume"),15,15,{
         'width': 170
       },
       function(a) {
-        doc.save("HTML2PDF.pdf");
+        doc.save("Resume.pdf");
       });
     }
   </script>
