@@ -1,4 +1,39 @@
-.header{
-    background-color: aqua;
-    display: contents;
+body{
+  background-image: linear-gradient(rgba(206, 197, 197, 0.5),35%,rgba(74, 71, 71, 0.662)), url(images/SSN\_background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.main{
+  padding: 5%;
+  padding-left: 15%;
+  align-items: center;
+}
+.mainele{
+  min-width: 300px;
+  max-width: 600px;
+  align-items: center;
+  border-radius: .5rem;
+  padding: 10%;
+  background-color: aliceblue;
+}
+.mainele h1{
+  color: rgb(8, 8, 125);
+}
+
+.mainele button{
+  font-size: larger;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 155px;
+  border-color: crimson;
+  border-radius: 6%;
+}
+.img1 {
+  float: right;
+}
+.logo{
+  height: 60px;
+  width: 120px;
+  
 }
