@@ -42,13 +42,13 @@ body{
 
 @media only screen and (max-width: 600px) {
   .main{
-    padding: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
-    align-items: center;
+    max-width: 240px;
   }
   .mainele {
     padding: 5%;
+  }
+  .img1 {
+    float: left;
   }
   h1 {
     font-size: 1.5rem;
