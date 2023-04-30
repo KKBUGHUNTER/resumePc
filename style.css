@@ -1,0 +1,64 @@
+body{
+  background-image: linear-gradient(rgba(206, 197, 197, 0.5),35%,rgba(74, 71, 71, 0.662)), url(images/SSN\_background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.main{
+  padding: 5%;
+  padding-left: 20%;
+  padding-right: 15%;
+  align-items: center;
+}
+.mainele{
+  max-width: 600px;
+  border-radius: .5rem;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-bottom: 7%;
+  background-color: rgb(255, 255, 255);
+}
+.mainele h1{
+  color: rgb(8, 8, 125);
+  text-align: center;
+}
+
+.mainele button{
+  font-size: larger;
+  background-color: rgb(255, 255, 255);
+  height: 45px;
+  width: 175px;
+  border-color: crimson;
+  border-radius: 6%;
+}
+.img1 {
+  float: right;
+}
+.logo{
+  height: 60px;
+  width: 120px;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    background-image: url(images/CT.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .main{
+    max-width: 500px;
+    padding: 10%;
+  }
+  .img1 {
+    display: flex;
+    margin-right: 20%;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+}
