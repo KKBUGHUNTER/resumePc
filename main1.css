@@ -1,0 +1,28 @@
+.steps {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.step1,
+.step2,
+.step3 {
+    width: 1%;
+    border-radius: 50%;
+    background-color: #33B219;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+hr {
+    display: inline-block;
+    width: 200px;
+    height: 4px;
+    border-width: 0;
+    background-color: #33B219;
+}
+
+.steps label {
+    color: white;
+}
