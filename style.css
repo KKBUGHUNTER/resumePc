@@ -4,9 +4,10 @@ body{
   background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
 .main{
   padding: 5%;
-  padding-left: 25%;
+  padding-left: 20%;
   padding-right: 15%;
   align-items: center;
 }
@@ -14,13 +15,14 @@ body{
   max-width: 600px;
   border-radius: .5rem;
   padding-top: 5%;
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-bottom: 7%;
   background-color: rgb(255, 255, 255);
 }
 .mainele h1{
   color: rgb(8, 8, 125);
+  text-align: center;
 }
 
 .mainele button{
@@ -41,17 +43,22 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
-  .main{
-    max-width: 240px;
+  body{
+    background-image: url(images/CT.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
-  .mainele {
-    padding: 5%;
+  .main{
+    max-width: 500px;
+    padding: 10%;
   }
   .img1 {
-    float: left;
+    display: flex;
+    margin-right: 20%;
   }
   h1 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    text-align: center;
   }
 }
