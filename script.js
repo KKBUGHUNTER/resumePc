@@ -6,6 +6,12 @@ var departmentIn = document.getElementById("department");
 var emailIdIn = document.getElementById("mail-id");
 var linkedinIdIn = document.getElementById("linkedin-url");
 
+// display a content in console.
+function displayname(){
+    var name1;
+    name1 = localStorage.getItem("yname");
+    console.log(name1);
+}
 
 //call this function to get the user basic details
 function getUserDetails() {
@@ -43,7 +49,7 @@ function getUserDetails() {
 
     if (error == false) {
         //to store the data in default local storage of your browser
-        localStorage.setItem("name", name);
+        localStorage.setItem("yname", name);
         localStorage.setItem("surname", surname);
         localStorage.setItem("degree", degree);
         localStorage.setItem("department", department);
@@ -51,6 +57,7 @@ function getUserDetails() {
         localStorage.setItem("linkedinId", linkedinId);
 
     }
+    displayname();
 }
 
 // this function is called when user doesn't enter anything is the required input field(for error)
@@ -65,3 +72,4 @@ function setSuccess(success) {
 
 //onclick listerner of button next
 document.getElementById("nextBtn").addEventListener("click", getUserDetails);
+
