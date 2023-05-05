@@ -8,12 +8,19 @@ body{
     margin-top: 50px;
 }
 
-.step1,
+.step1{
+    width: 1%;
+    border-radius: 50%;
+    background-color: #33B219;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
 .step2,
 .step3 {
     width: 1%;
     border-radius: 50%;
-    background-color: #33b219;
+    background-color: #6e6c6c;
     padding: 10px;
     text-align: center;
     display: inline-block;
@@ -24,7 +31,7 @@ hr {
     width: 200px;
     height: 4px;
     border-width: 0;
-    background-color: #33B219;
+    background-color: #c2cfbf;
 }
 
 .steps label {
