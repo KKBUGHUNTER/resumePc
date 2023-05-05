@@ -1,22 +1,19 @@
+body{
+    min-height: 100vh;
+    background:burlywood;
+}
 .steps {
     width: 100%;
     text-align: center;
     margin-top: 50px;
 }
 
-.step1{
-    width: 1%;
-    border-radius: 50%;
-    background-color: #33B219;
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
-}
+.step1,
 .step2,
 .step3 {
     width: 1%;
     border-radius: 50%;
-    background-color: #6e6c6c;
+    background-color: #33b219;
     padding: 10px;
     text-align: center;
     display: inline-block;
@@ -27,9 +24,157 @@ hr {
     width: 200px;
     height: 4px;
     border-width: 0;
-    background-color: #c2cfbf;
+    background-color: #33B219;
 }
 
 .steps label {
     color: white;
+} 
+.div-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.title{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.subtitle{
+    font-size: 20px;
+    font-weight: 540;
+    font-family: sans-serif;
+  }
+
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label, .textarea-field label{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;    
+}
+
+.input-field input, select{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.textarea-field textarea{
+    width: 580px;
+    height: 100px;
+    resize: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 40px;
+    max-width: 200px;
+    width: 500%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color:burlywood;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    float: right;
+}
+
+@media (max-width:750px){
+.step1,
+.step2,
+.step3 {
+    width: 1%;
+    border-radius: 50%;
+    background-color: #33b219;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+hr {
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    border-width: 0;
+    background-color: #33B219;
+}
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+        display: none;
+    }
+    form .fields .input-field{
+        width:calc(100% /2 -15px)
+    }
+    .textarea-field textarea{
+      width: 100%;
+
+    }
+}
+@media(max-width:550px){
+    form .fields .input-field{
+        width: 100%;
+    }
+    .textarea-field textarea{
+        width:100%;
+
+    }
+}
+
+
+
+
+
+
+
+

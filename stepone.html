@@ -1,70 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="steponecss.css">
-    <title>Header</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="steponecss.css">
+  <title>Document</title>
 </head>
 
 <body>
-    <div class="steps">
-        <div class="step1">
-            <label>1</label>
-        </div>
-        <hr>
-        <div class="step2">
-            <label>2</label>
-        </div>
-        <hr>
-        <div class="step3">
-            <label>3</label>
-        </div>
+  <div class="steps">
+    <div class="step1">
+      <label>1</label>
     </div>
-    <br>
+    <hr>
+    <div class="step2">
+      <label>2</label>
+    </div>
+    <hr>
+    <div class="step3">
+      <label>3</label>
+    </div>
+  </div>
+  <br>
+  <div class="div-body">
+  <div class="container">
     <form>
-        <label for="yname">First Name</label>
-        <input type="text" id="your-name" name="your-name" placeholder="e.g. Name"><br>
-        <br>
-        <label for="surname">Surename</label>
-        <input type="text" id="surname" name="surname" placeholder="e.g. Surname"><br>
-        <br>
-        <label for="degree">Degree</label>
-        <select name="degree" id="degree">
-            <option value="B.E">B.E</option>
-            <option value="B.Tech">B.Tech</option>
-        </select>
-        <br>
-        <br>
-        <label for="department">Department</label>
-        <select name="department" id="department">
-            <option value="B.E Electrical and Electronic Engineering">B.E Electrical and Electronic Engineering</option>
-            <option value="B.E. Computer Science And Engineering">B.E. Computer Science And Engineering</option>
-            <option value="B.E. Mechanical Engineering">B.E. Mechanical Engineering</option>
-            <option value="B.E. Bio-Medical Engineering">B.E. Bio-Medical Engineering</option>
-            <option value="B.E Electronics and Communication Engineering">B.E Electronics and Communication Engineering
-            </option>
-            <option value="B.E. Bio-Medical Engineering">B.E. Bio-Medical Engineering</option>
-            <option value="B.E Electronics and Communication Engineering">B.E Electronics and Communication Engineering
-            </option>
-            <option value="B.E. Civil Engineering">B.E. Civil Engineering</option>
-            <option value="B.Tech. Chemical Engineering">B.Tech. Chemical Engineering</option>
-            <option value="B.Tech Information technology">B.Tech Information technology</option>
+      <div class="form-first">
+        <div class="details-personal">
+          <span class="title">Personal Details</span>
 
-        </select>
-        <br>
-        <br>
-        <label for="Emailid">*Email ID</label>
-        <input type="mail" id="mail-id" name="mail-id" placeholder="e.g. xyz@ssn.edu.in"><br>
-        <br>
-        <label for="linkedin"> Linkedin ID</label>
-        <input type="text" id="linkedin-url" name="linkedin-url" placeholder="e.g. www.linkedin.com/in/xyz/"><br>
-        <button id="nextBtn">NEXT</button>
-        <script src="script.js"></script>
+          <div class="fields">
+            <div class="input-field">
+              <label for="yname">*Name:</label>
+              <input type="text" id="your-name" name="your-name" placeholder="NAME" required>
+            </div>
+
+            <div class="input-field">
+              <label for="surname">Surname:</label>
+              <input type="text" id="surname" name="surname" placeholder="SURNAME" required>
+            </div>
+
+            <div class="input-field">
+              <label for="phone">Phone Number:</label>
+              <input type="number" id="phone-no" name="phone number" placeholder="Phone Number" required>
+            </div>
+
+            <div class="input-field">
+              <label for="Dateofbirth">*Date Of Birth:</label>
+              <input type="date" id="birth-date" name="Dateofbirth" placeholder="Date Of Birth" required>
+            </div>
+
+            <div class="input-field">
+              <label for="Emailid">*Email Id:</label>
+              <input type="email" id="mail-id" name="mail-id" placeholder="EMAIL ID" required>
+            </div>
+
+            <div class="input-field">
+              <label for="linkedin"> Linkedin Id:</label>
+              <input type="url" id="linkedin-url" name="linkedin-url" placeholder="LINKEDIN ID" required>
+            </div>
+
+
+          </div>
+
+          <div class="textarea-field">
+            <label for="objective">Objective:</label><br>
+            <textarea name="objective" id="objective" cols="30" rows="10" placeholder="Objective"></textarea>
+          </div>
+          <br>
+
+          <div class="education">
+            <span class="title">Education</span>
+            <div class="fields">
+              <div class="input-field">
+                <label for="degree">*Degree:</label>
+                <select name="degree" id="degree">
+                  <option value="B.E">B.E</option>
+                  <option value="B.Tech">B.Tech</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label for="department">*Department:</label>
+                <select name="department" id="department">
+                  <option value="Electrical and Electronic Engineering">Electrical and Electronic Engineering</option>
+                  <option value="Computer Science And Engineering">Computer Science And Engineering</option>
+                  <option value="Mechanical Engineering"> Mechanical Engineering</option>
+                  <option value="Bio-Medical Engineering">Bio-Medical Engineering</option>
+                  <option value="Electronics and Communication Engineering">Electronics and Communication Engineering
+                  </option>
+                  <option value="Bio-Medical Engineering">Bio-Medical Engineering</option>
+                  <option value="Civil Engineering">Civil Engineering</option>
+                  <option value="Chemical Engineering">Chemical Engineering</option>
+                  <option value="Information technology">Information technology</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label for="cgpa"> CGPA:</label>
+                <input type="number" id="cgpa" name="cgpa" placeholder="CGPA" required>
+              </div>
+              <div class="input-field">
+                <label for="yearofcompletion"> Year Of Completion:</label>
+                <input type="year" id="ug-completed-year" name="yearofcompletion" placeholder="Year Of Completion"
+                  required>
+              </div>
+
+            </div>
+
+          </div>
+          <br>
+
+          <div class="Senior-Secondary">
+            <span class="subtitle">Senior Secondary Education(12th):</span>
+            <div class="fields">
+
+              <div class="input-field">
+                <label for="Institution"> Institution:</label>
+                <input type="text" id="twelfth-institition-name" name="Institution" placeholder="Institution" required>
+              </div>
+
+              <div class="input-field">
+                <label for="Percentage">Percentage :</label>
+                <input type="number" id="twelfth-percentage" name="Percentage" placeholder="Percentage" required>
+              </div>
+
+              <div class="input-field">
+                <label for="Year of completion">Year Of Completion:</label>
+                <input type="year" id="twelfth-completed-year" name="Year of completion"
+                  placeholder="Year Of Completion" required>
+              </div>
+
+            </div>
+          </div>
+          <br>
+
+          <div class="Secondary Education(10th)">
+            <span class="subtitle">Secondary Education(10th):</span>
+            <div class="fields">
+              <div class="input-field">
+                <label for="Institution"> Institution:</label>
+                <input type="text" id="tenth-institition-name" name="Institution" placeholder="Institution" required>
+              </div>
+
+              <div class="input-field">
+                <label for="Percentage">Percentage :</label>
+                <input type="number" id="tenth-percentage" name="Percentage" placeholder="Percentage" required>
+              </div>
+
+              <div class="input-field">
+                <label for="Year of completion">Year Of Completion:</label>
+                <input type="year" id="tenth-completed-year" name="Year of completion" placeholder="Year Of Completion"
+                  required>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="nextBtn">
+            <span class="btnText">Next</span>
+            <i class="nextBtn"></i>
+          </button>
+
+
+
+
+
+
+
+        </div>
     </form>
-    <div><p></p></div>
+  </div>
+  </div>
+
+
 </body>
 
 </html>
