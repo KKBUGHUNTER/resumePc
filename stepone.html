@@ -33,58 +33,82 @@
 
           <div class="fields">
             <div class="input-field">
-              <label for="yname">*Name:</label>
-              <input type="text" id="your-name" name="your-name" placeholder="NAME">
+              <label for="yname">Name:</label>
+              <input type="text" id="your-name" name="your-name" placeholder="ex:name" required>
             </div>
 
             <div class="input-field">
               <label for="surname">Surname:</label>
-              <input type="text" id="surname" name="surname" placeholder="SURNAME" required>
+              <input type="text" id="surname" name="surname" placeholder="ex:surname" required>
             </div>
-
+            
             <div class="input-field">
               <label for="phone">Phone Number:</label>
-              <input type="number" id="phone-no" name="phone number" placeholder="Phone Number" required>
+              <input type="tel" id="phone" name="phone" placeholder="ex:phone number" onblur="addPrefix()" required>
+
+              <script>
+                function addPrefix() {
+                  var input = document.getElementById("phone");
+                  if (!input.value.startsWith("+91 ")) {
+                    input.value = "+91 " + input.value;
+                  }
+                }
+              </script>
+
+            </div>
+          
+            <div class="input-field">
+              <label for="Dateofbirth">Date Of Birth:</label>
+              <input type="date" id="birth-date" name="Dateofbirth" placeholder="ex:Date Of Birth" required>
             </div>
 
             <div class="input-field">
-              <label for="Dateofbirth">*Date Of Birth:</label>
-              <input type="date" id="birth-date" name="Dateofbirth" placeholder="Date Of Birth" required>
+              <label for="Emailid">Email Id:</label>
+              <input type="email" id="mail-id" name="mail-id" placeholder="ex:example@ssn.edu.in" required>
             </div>
 
             <div class="input-field">
-              <label for="Emailid">*Email Id:</label>
-              <input type="email" id="mail-id" name="mail-id" placeholder="EMAIL ID" required>
-            </div>
-
-            <div class="input-field">
-              <label for="linkedin"> Linkedin Id:</label>
-              <input type="url" id="linkedin-url" name="linkedin-url" placeholder="LINKEDIN ID" required>
+              <label for="linkedin">Linkedin Id:</label>
+              <input type="url" id="linkedin-url" name="linkedin-url" placeholder="ex:www.linkedin.com/in/<your id>" required>
             </div>
 
 
           </div>
-
-          <div class="textarea-field">
-            <label for="objective">Objective:</label><br>
-            <textarea name="objective" id="objective" cols="30" rows="10" placeholder="Objective"></textarea>
+          <div class="fields">
+            <div class="textarea-field">
+              <label for="objective">Objective:</label><br>
+              <textarea name="objective" id="objective" cols="30" rows="10" placeholder="ex:Objective"></textarea>
+            </div>
+            <div class="dropdown-container">
+              <label for="tempelete">Tempelete:</label><br>
+              <select class="dropdown">
+                <option value="">Select an option</option>
+                <option>Tempelete 1</option>
+                <option>Tempelete 2</option>
+                <option>Tempelete 3</option>
+              </select>
+            </div>
+            
+              
           </div>
-          <br>
+           <br>
 
           <div class="education">
             <span class="title">Education</span>
             <div class="fields">
               <div class="input-field">
-                <label for="degree">*Degree:</label>
+                <label for="degree">Degree:</label>
                 <select name="degree" id="degree">
+                  <option disabled selected>Select</option>
                   <option value="B.E">B.E</option>
                   <option value="B.Tech">B.Tech</option>
                 </select>
               </div>
 
               <div class="input-field">
-                <label for="department">*Department:</label>
+                <label for="department">Department:</label>
                 <select name="department" id="department">
+                  <option disabled selected>Select</option>
                   <option value="Electrical and Electronic Engineering">Electrical and Electronic Engineering</option>
                   <option value="Computer Science And Engineering">Computer Science And Engineering</option>
                   <option value="Mechanical Engineering"> Mechanical Engineering</option>
@@ -100,11 +124,11 @@
 
               <div class="input-field">
                 <label for="cgpa"> CGPA:</label>
-                <input type="number" id="cgpa" name="cgpa" placeholder="CGPA" required>
+                <input type="number"  min="0" max="10" id="cgpa" name="cgpa" placeholder="ex:CGPA" required>
               </div>
               <div class="input-field">
                 <label for="yearofcompletion"> Year Of Completion:</label>
-                <input type="year" id="ug-completed-year" name="yearofcompletion" placeholder="Year Of Completion"
+                <input type="number" min="1980" max="2050" id="ug-completed-year" name="yearofcompletion" placeholder="ex:Year Of Completion"
                   required>
               </div>
 
@@ -118,19 +142,19 @@
             <div class="fields">
 
               <div class="input-field">
-                <label for="Institution"> Institution:</label>
-                <input type="text" id="twelfth-institition-name" name="Institution" placeholder="Institution" required>
+                <label for="Institution">Institution:</label>
+                <input type="text" id="twelfth-institition-name" name="Institution" placeholder="ex:Institution" required>
               </div>
 
               <div class="input-field">
                 <label for="Percentage">Percentage :</label>
-                <input type="number" id="twelfth-percentage" name="Percentage" placeholder="Percentage" required>
+                <input type="number" min="0" max="100"id="twelfth-percentage" name="Percentage" placeholder="ex:Percentage" required>
               </div>
 
               <div class="input-field">
                 <label for="Year of completion">Year Of Completion:</label>
-                <input type="year" id="twelfth-completed-year" name="Year of completion"
-                  placeholder="Year Of Completion" required>
+                <input type="number" min="1980" max="2050" id="twelfth-completed-year" name="Year of completion"
+                  placeholder="ex:Year Of Completion" required>
               </div>
 
             </div>
@@ -141,32 +165,33 @@
             <span class="subtitle">Secondary Education(10th):</span>
             <div class="fields">
               <div class="input-field">
-                <label for="Institution"> Institution:</label>
-                <input type="text" id="tenth-institition-name" name="Institution" placeholder="Institution" required>
+                <label for="Institution">Institution:</label>
+                <input type="text" id="tenth-institition-name" name="Institution" placeholder="ex:Institution" required>
               </div>
 
               <div class="input-field">
                 <label for="Percentage">Percentage :</label>
-                <input type="number" id="tenth-percentage" name="Percentage" placeholder="Percentage" required>
+                <input type="number"  min="0" max="100" id="tenth-percentage" name="Percentage" placeholder="ex:Percentage" required>
               </div>
 
               <div class="input-field">
                 <label for="Year of completion">Year Of Completion:</label>
-                <input type="year" id="tenth-completed-year" name="Year of completion" placeholder="Year Of Completion"
+                <input type="number" min="1980" max="2050" id="tenth-completed-year" name="Year of completion" placeholder="ex:Year Of Completion"
                   required>
               </div>
 
             </div>
           </div>
 
-          <button class="nextBtn" id="nextBtn">Next</button>
-
+          <button class="nextBtn">
+            <span class="btnText">Next</span>
+            <i class="nextBtn"></i>
+          </button>
         </div>
     </form>
   </div>
   </div>
 
-  <script src="script.js"></script>
 
 </body>
 

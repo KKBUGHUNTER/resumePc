@@ -1,6 +1,6 @@
 body{
     min-height: 100vh;
-    background:burlywood;
+    background:rgb(210, 102, 13);
 }
 .steps {
     width: 100%;
@@ -8,19 +8,12 @@ body{
     margin-top: 50px;
 }
 
-.step1{
-    width: 1%;
-    border-radius: 50%;
-    background-color: #33B219;
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
-}
+.step1,
 .step2,
 .step3 {
     width: 1%;
     border-radius: 50%;
-    background-color: #6e6c6c;
+    background-color: #33b219;
     padding: 10px;
     text-align: center;
     display: inline-block;
@@ -31,7 +24,7 @@ hr {
     width: 200px;
     height: 4px;
     border-width: 0;
-    background-color: #c2cfbf;
+    background-color: #33B219;
 }
 
 .steps label {
@@ -117,6 +110,21 @@ form .fields .input-field{
     padding: 10px;
 }
 
+.dropdown-container {
+    
+  }
+  
+  .dropdown {
+    margin-right:100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  
 .container form button{
     display: flex;
     align-items: center;
@@ -129,7 +137,7 @@ form .fields .input-field{
     color: #fff;
     border-radius: 5px;
     margin: 25px 0;
-    background-color:burlywood;
+    background-color:rgb(210, 102, 13);
     transition: all 0.3s linear;
     cursor: pointer;
     float: right;
