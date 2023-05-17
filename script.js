@@ -71,6 +71,7 @@ function displayData() {
 
 //call this function to get the user basic details
 function getUserDetails() {
+    
     event.preventDefault();
 
     var name = nameIn.value;
